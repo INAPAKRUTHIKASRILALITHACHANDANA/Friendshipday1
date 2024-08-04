@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Day Magic: Celebrating the Gift of Friends</title>
+    <link rel="shortcut icon" href="friend1.png">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+    <style>
+        body{
+            background: linear-gradient(45deg, #FFFB7D, #FFABAB);
+        }
+        h2{
+            font-family:  Monotype Corsiva;
+        }
+        .wishes{
+            margin-top: 20px;
+            text-align: center;
+            color: rgb(239, 20, 255);
+        }
+    </style>
+    <script>
+        function submit(){
+            document.getElementById("Details").style.display="block";
+            document.getElementById("name").innerHTML=document.getElementById("Name").value;
+        }
+    </script>
+</head>
+<body class="container-fluid">
+    <div>
+        <header>
+            <div class="mt-3">
+                <h1 style="font-family: Monotype Corsiva;"><marquee direction="left"><button class="btn btn-primary">"Friendship isn't about whom you have known the longest. It's about who came and never left your side."</button></marquee></h1>
+                <h1 style="font-family: Monotype Corsiva;"><marquee direction="right"><button class="btn btn-danger">"The only way to have a friend is to be one."</button></marquee></h1>
+                <h1 style="font-family: Monotype Corsiva;"><marquee direction="left"><button class="btn btn-success">"Friendship is born at that moment when one person says to another, 'What! You too? I thought I was the only one."</button></marquee></h1>
+                <h1 style="font-family: Monotype Corsiva;"><marquee direction="right"><button class="btn btn-info">"Friendship is the golden thread that ties the heart of all the world."</button></marquee></h1>
+            </div>
+        </header>
+        <section>
+            <div class="input-group">
+                <button class="btn btn-primary"><span class="bi bi-person-fill"></span></button>
+                <input type="text" class="form-control" id="Name" placeholder="Welcome back! Could you please enter your name to continue?">
+                <button class="btn btn-warning" onclick="submit()">Submit</button>
+            </div>
+        </section>
+        <section class="wishes">
+            <div id="Details" style="display: none;">
+                <h2>To my true friend, </h2>
+                <h2 id="name"></h2>
+                <h2>Your support and kindness make every day brighter. Happy Friendship Day!👬🤝👫🤝👭💕💕😊😊💓💓🥰🥰</h2>
+                <div>
+                    <img src="https://media.licdn.com/dms/image/D4E12AQFspDR2dYiwhQ/article-inline_image-shrink_1000_1488/0/1722696271409?e=1727913600&v=beta&t=d7jfYYAjKA_iGf0AKQASPbEuFtoQ_IKwk1YzXiZu9us" alt="gif not found" height="230px" width="200px">
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+</body>
+</html>
